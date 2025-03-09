@@ -1,0 +1,150 @@
+body{
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), purple);
+    align-items: center;
+    text-align: center;
+
+}
+.a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kbc{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background:black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: fit-content;
+    align-items: center;
+    padding-left: 10px;
+    border: 10px;
+    position: fixed;
+    transition: 0.4s;
+    margin: -10px;
+    z-index: 9;
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+.kbc img{
+    height: 60px;
+    width: 20px 5px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    padding-right: 15px;
+    top: 20%;
+    border: 10px;
+    z-index: 10;
+}
+
+.kbc > .naav{
+    background-image:linear-gradient(to bottom,rgba(92, 92, 92), rgb(68, 68, 68) 90%);
+    width: 100%;
+    margin: -10px;
+    text-align: center;
+    align-items: center;
+
+    padding-right: 10%;
+}
+.links{
+    color: rgba(255, 255, 255, 0.89);
+    text-decoration: none;
+    
+}
+
+.campo{
+    background-color: whitesmoke;
+    font-weight: 100;
+    font-size: 15px;
+    position:relative;
+
+    margin: 10% 0 10% 0;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+
+}
+
+.textobuxa{
+    display: flex;
+    flex-direction:column;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 20px;
+    box-shadow: 8px 8px 11px black;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline;
+    margin-left: -10%;
+}
+.li-link{
+    display:inline;
+    padding-inline:0px;
+    margin: 5px;
+}
+nav{
+    margin: auto;
+    text-align: center;
+}
+
+.containerbrabo{
+    display: flex;
+    align-content: space-between;
+    height: fit-content;
+    flex-flow:row wrap;
+}
+.projeto{
+    background-color: gray;
+    border-radius: 5px;
+    margin:1%;
+    flex:1;
+    text-decoration: none;
+    padding: 10px;
+    min-width: 40%;
+}
+
+.containerbrabo div{
+    box-shadow: 8px 8px 11px black;
+}
+
+.projeto > a{
+    text-decoration: none;
+    color: purple;
+}
+
+
+
+.eukk{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.eukk > div{
+    background-color: gray;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 0 5% 5% 5%;
+
+    box-shadow: 8px 8px 11px black;
+}
+.pe{
+    padding-left: 9.4%;
+    background-color: black;
+    position: absolute;
+    margin-left: -10%;
+    height: fit-content;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.pe > .li-link > a{
+    font-size: 200px;
+}

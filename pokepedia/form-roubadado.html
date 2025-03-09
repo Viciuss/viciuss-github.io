@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Brabo</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="kbc">
+        <div>
+            <a href="../../Pag pessoal/index.html">
+                <img class="logo"src="./imgs/logo2.png" width="50" height="50" align="left" alt="logo">
+            </a>
+            <div class="titulo">
+                <h1 strong>Obrigado pelo comentário!</h1>
+            </div>
+
+        </div>
+        <footer>
+            <div id="links">
+                <img src="imgs/Dream_Up-Grade_Sprite-removebg-preview-photoaidcom-greyscale.png" class="imgs" alt="">
+                <a href="index.html" class="links">Poképedia</a>
+            </div>
+        </footer>
+        </header>
+
+
+
+    <fieldset style="top: 55%; margin-top: -10px;" id="campo">
+        <form action="validation.php" methot="post">
+            <div class="circulo" style="float:right; height: 150px; width: 150px; margin-top: 15%;">
+                <img src="imgs/576-removebg-preview.png" alt="" style="float:right; height: 150px;">
+            </div>
+            <label for="nome">Digite seu Nome: </label>
+            <input type="text" name="nome" id="inome">
+            <br><br>
+            <label for="emails">Digite seu Email: </label>
+            <input type="email" name="email" id="iemail">
+            <br><br>
+            <label for="num">Selecione seu número de Telefone: </label>
+            <input type="range" id="num"min="11111111111" max="99999999999">
+            <p id="valor">0</p>
+            <label for="caixa">Digite sua sugestão:</label><br>
+            <textarea name="caixa" id="itext" cols="50" rows="10"></textarea>
+            <br>
+            <button style="font-family:Silkscreeen;" type="submit"><font style="font-family:Silkscreeen;">Enviar</font></button>
+        </form>
+        <a href="index.html">Voltar a pagina inicial</a>
+        <footer class="pé"><p>Invista no Urubu do Pix!</p></footer>
+    </fieldset>
+</body>
+<script src="./script.js"></script>
+</html>

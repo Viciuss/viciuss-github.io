@@ -1,0 +1,97 @@
+body{
+    background-image: linear-gradient(to left,black,yellow,black);
+    align-items: center;
+    
+}
+#campo{
+    background-color: whitesmoke;
+    font-family: "Silkscreen",serif;
+    font-weight: 100;
+    font-size: 15px;
+    position:absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 90px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+}
+#kbc{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: fit-content;
+    text-align: center;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 10px;
+    position: fixed;
+    transition: 0.4s;
+    margin: -10px;
+    z-index: 9;
+    margin-bottom: 50px;
+}
+#kbc > img.logo{
+    height: fit-content;
+    width: 100%;
+    padding-right: 15px;
+    border: 10px;
+    z-index: 10;
+}
+
+#kbc > footer{
+    background: gray;
+    width: 100%;
+    margin: -10px;
+    padding-right: 10px;
+    z-index: 9;
+    
+
+}
+
+
+.links{
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.campo #links {
+    display: none;
+}
+
+.circulo{
+    background-color: darkgray;
+    border-radius: 50%;
+    z-index: 2;
+    height: 50%;
+    width: 14%;
+}
+
+.imgs{
+    height: 20px;
+    padding-left: -10px;
+    margin-left:15px;
+    width: 20px;
+}
+.div1{
+    float: left;
+}
+.div2{
+    float: left;
+}
+.div3{
+    float: left;
+}
+.div4{
+    float: left;
+}
+
+.pé{
+    text-align: right;
+    font-size: 11px;
+}
