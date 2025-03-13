@@ -8,11 +8,19 @@ body{
     font-family: "Silkscreen",serif;
     font-weight: 100;
     font-size: 15px;
-    position:absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+
     margin-top: 15%;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+
+    background-color: whitesmoke;
+    font-weight: 100;
+    font-size: 15px;
+    position:relative;
+
+    margin: 10% 0 10% 25%;
     padding: 30px;
     border-radius: 15px;
     width: 50%;
@@ -42,7 +50,7 @@ body{
     z-index: 10;
 }
 
-#kbc > footer{
+#kbc > .footer{
     background: gray;
     width: 100%;
     margin: -10px;
@@ -72,6 +80,7 @@ body{
     width: 14%;
 }
 
+
 .imgs{
     height: 20px;
     padding-left: -10px;
@@ -90,8 +99,24 @@ body{
 .div4{
     float: left;
 }
+.li-link{
+    display:inline;
+    padding-inline:0px;
+    margin: 5px;
+}
 
-.pé{
-    text-align: right;
-    font-size: 11px;
+footer{
+    padding-left: 9.4%;
+    background-color:black;
+    position: absolute;
+    margin-left: -10%;
+    height: fit-content;
+    color: white;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+}
+footer > .li-link > a{
+    font-size: 200px;
 }
