@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(90deg, rgb(0, 0, 0), purple);
+    background-image: linear-gradient(90deg, rgb(40, 53, 110), purple);
     align-items: center;
     text-align: center;
 
@@ -10,21 +10,23 @@ body{
     justify-content: center;
 }
 .kbc{
+    display: block;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background:black;
-    position: absolute;
-    width: 100%;
+    position: static;
+    width: auto;
     top: 0;
-    height: fit-content;
+    height: 90%;
     align-items: center;
     padding-left: 10px;
     border: 10px;
-    position: fixed;
-    transition: 0.4s;
-    margin: -10px;
+    padding-top: .25%;
+    
+    margin: -10px -7.5px 0 -10px;
     z-index: 9;
     color: whitesmoke;
     margin-bottom: 50px;
+    
 }
 .kbc img{
     height: 60px;
@@ -39,13 +41,15 @@ body{
 
 .kbc > .naav{
     background-image:linear-gradient(to bottom,rgba(92, 92, 92), rgb(68, 68, 68) 90%);
-    width: 100%;
-    margin: -10px;
+    width: auto;
+    margin-left: -10px;
     text-align: center;
     align-items: center;
 
-    padding-right: 10%;
 }
+
+
+
 .links{
     color: rgba(255, 255, 255, 0.89);
     text-decoration: none;
@@ -53,26 +57,35 @@ body{
 }
 
 .campo{
-    background-color: whitesmoke;
+    
     font-weight: 100;
     font-size: 15px;
     position:relative;
 
-    margin: 10% 0 10% 0;
+    margin: 0 0 10% 0;
     padding: 30px;
     border-radius: 15px;
     width: 80%;
 
 }
 
+
+
+
+
 .textobuxa{
     display: flex;
     flex-direction:column;
-    background-color: gray;
+    background-color: whitesmoke;
     border-radius: 5px;
     padding: 1%;
     font-size: 20px;
     box-shadow: 8px 8px 11px black;
+    transition: 250ms linear;
+    
+}
+.textobuxa:hover{
+    transform: scale(1.1);
 }
 
 nav ul{
@@ -95,19 +108,25 @@ nav{
     align-content: space-between;
     height: fit-content;
     flex-flow:row wrap;
+    transition: 250ms linear;
+    transition-duration: 250ms;
 }
 .projeto{
-    background-color: gray;
+    background-color: whitesmoke;
     border-radius: 5px;
     margin:1%;
     flex:1;
     text-decoration: none;
     padding: 10px;
     min-width: 40%;
+
 }
 
 .containerbrabo div{
     box-shadow: 8px 8px 11px black;
+}
+.containerbrabo div:hover{
+    transform: scale(1.1);
 }
 
 .projeto > a{
@@ -116,23 +135,28 @@ nav{
 }
 
 
-
 .eukk{
     display: flex;
     flex-direction: row;    
     align-items: center;
     justify-content: center;
     gap: 10%;
+    transition: 250ms;
+
 }
 
 .eukk > div{
-    background-color: gray;
+    background-color: whitesmoke;
     border-radius: 5px;
     margin: 1%;
     padding: 0 5% 5% 5%;
 
     box-shadow: 8px 8px 11px black;
 }
+.eukk div:hover{
+    transform: scale(1.1);
+}
+
 .pe{
     padding-left: 9.4%;
     background-color: black;
