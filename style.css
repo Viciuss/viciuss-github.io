@@ -81,11 +81,8 @@ body{
     padding: 1%;
     font-size: 20px;
     box-shadow: 8px 8px 11px black;
-    transition: 250ms linear;
+
     
-}
-.textobuxa:hover{
-    transform: scale(1.1);
 }
 
 nav ul{
@@ -106,10 +103,9 @@ nav{
 .containerbrabo{
     display: flex;
     align-content: space-between;
-    height: fit-content;
+
     flex-flow:row wrap;
-    transition: 250ms linear;
-    transition-duration: 250ms;
+
 }
 .projeto{
     background-color: whitesmoke;
@@ -125,9 +121,7 @@ nav{
 .containerbrabo div{
     box-shadow: 8px 8px 11px black;
 }
-.containerbrabo div:hover{
-    transform: scale(1.1);
-}
+
 
 .projeto > a{
     text-decoration: none;
@@ -141,9 +135,19 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 10%;
-    transition: 250ms;
+
 
 }
+.textobuxa, .containerbrabo div, .eukk div {
+    transition: transform 250ms ease-in-out; /* Isso cria uma transição mais suave */
+}
+
+.textobuxa:hover, .containerbrabo div:hover, .eukk div:hover {
+    transform: scale(1.1);
+}
+
+
+
 
 .eukk > div{
     background-color: whitesmoke;
@@ -152,9 +156,6 @@ nav{
     padding: 0 5% 5% 5%;
 
     box-shadow: 8px 8px 11px black;
-}
-.eukk div:hover{
-    transform: scale(1.1);
 }
 
 .pe{
