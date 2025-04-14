@@ -236,3 +236,71 @@ nav{
 .pe > .li-link > a{
     font-size: 200px;
 }
+
+/* Malditos celulares me dando trabalho */
+
+/* 🌐 Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+    header.kbc {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ul-links {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .li-link {
+      margin: 10px 0;
+    }
+  
+    .eukk {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hard, .soft, .tecno {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .textobuxa {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .textobuxa img {
+      float: none !important;
+      margin-top: 10px;
+    }
+  
+    .containerbrabo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projeto {
+      width: 90%;
+      margin: 20px 0;
+    }
+  
+    .campo {
+      padding: 10px;
+    }
+  
+    footer.pe {
+      text-align: center;
+    }
+  
+    footer.pe ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    footer.pe li {
+      margin-bottom: 10px;
+    }
+  }
+  
