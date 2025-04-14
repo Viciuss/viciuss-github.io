@@ -239,8 +239,10 @@ nav{
 
 /* Malditos celulares me dando trabalho */
 
-/* 🌐 Estilos responsivos para telas menores que 768px */
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     header.kbc {
       flex-direction: column;
       text-align: center;
