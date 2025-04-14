@@ -1,5 +1,7 @@
 body{
-    background-image: linear-gradient(90deg, rgb(40, 53, 110), purple);
+    background-image: url(imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     text-align: center;
     overflow-x: hidden;
@@ -76,7 +78,7 @@ body{
 .textobuxa{
     display: flex;
     flex-direction:column;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.63);
     border-radius: 5px;
     padding: 1%;
     font-size: 20px;
@@ -108,7 +110,7 @@ nav{
 
 }
 .projeto{
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.63);
     border-radius: 5px;
     margin:1%;
     flex:1;
@@ -150,7 +152,7 @@ nav{
 
 
 .eukk > div{
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.63);
     border-radius: 5px;
     margin: 1%;
     padding: 0 5% 5% 5%;
@@ -164,7 +166,7 @@ nav{
     position: absolute;
     margin-left: -10%;
     height: fit-content;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.63);
     text-align: center;
     align-items: center;
     width: 100%;
