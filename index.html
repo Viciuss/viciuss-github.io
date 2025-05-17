@@ -10,44 +10,41 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    <header class="kbc">
-        <div>
-            <img src="imgs/Pombo Brabo.png" width="50" align="left" alt="logo">
-            <h1>Seja bem vindo ao meu portifólio</h1>
-        </div>
-        <div class="naav">
-            <nav>
-                <ul class="ul-links">
-                    <li class="li-link"><a href="#me" class="links">Sobre Mim</a></li>
-                    <li class="li-link"><a href="#projetos" class="links">Projetos</a></li>
-                    <li class="li-link"><a href="https://github.com/Viciuss?tab=repositories" class="links">GitHub</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="sky" id="sky"></div>
-    <div class="a">
-        
-        <div class="campo">
-            <section id="me">
-                <h2>Quem sou eu?</h2>
-            <div class="textobuxa">
-                <div style="display: flex; flex-direction: row;">
-                    <p>Meu nome é Vinicius Costa, atualmente tenho 17 anos e estou cursando análise e desenvolvimento
-                        de sistemas e logística. Meu foco inicial é me tornar um dev back-end, mas futuramente pretendo evoluir
-                        para um dev fullstack. Durante meu tempo livre eu sou guitarrista na minha igreja
-                    e tenho planos de montar uma banda (quando ocorrer eu coloco um link) </p>
-                    
-                    <img src="imgs/Pombo Brabo.png" alt="" style="transform:scaleX(-1);height: 90px; width: 90px; float: left; border-radius: 50%;">
-                </div>
-            </div>
-        </section>
-        <section class="qualify">
+    <div id="abertura" class="abertura">
+        <h1></h1>
+    </div>    
+
+
+    <div id="main" class="main">
+        <div class="sky" id="sky"></div>
+        <div class="a">
+            
+            <div class="campo">
+                <section id="me" class="me">
+                    <div class="sobremim">
+                        <h2>Mais sobre mim</h2>
+                        <div>
+                            <p>Meu nome é Vinicius Costa, atualmente tenho 17 anos e estou cursando análise e desenvolvimento
+                                de sistemas e logística. Meu foco inicial é me tornar um dev back-end, mas futuramente pretendo evoluir
+                                para um dev fullstack. Durante meu tempo livre eu sou guitarrista na minha igreja
+                                e tenho planos de montar uma banda (quando ocorrer eu coloco um link) </p>
+                                
+                        </div>
+                    </div>
+                    <div class="circulo">
+                        <img src="imgs/Pombo Brabo.png" alt="" style="transform:scaleX(-1);height: 200px; width: 200px; float: left; border-radius: 50%;">
+                    </div>
+                </section>
+        <section class="qualify">            
             <h1>Qualificações</h1>
-            <div class="eukk">
-                <div class="hard">
-                    <h3>Hard skills</h3>
-                    <br>
+            <div class="carrossel">
+                <button id="prev" class="prev">
+                    <img style="height: 15px; width: 15px;transform: scaleX(-1);" src="imgs/jogue-o-botao-do-triangulo-cheio-da-seta-para-a-direita.png" alt="">
+                </button>
+                <div id="car-track" class="itemsCar">
+                    <div class="hard item-Car">
+                        <h3>Hard skills</h3>
+                        <br>
                         <ul style="text-align: left;">
                             <li><i class="devicon-python-plain"> Python</i></li>
                             <li><i class="devicon-cplusplus-plain"> C++</i></li>
@@ -55,29 +52,33 @@
                             <li><i class="devicon-css3-plain">CSS</i></li>
                         </ul>
                     </div>
-                    <div class="soft">
-                        <h3 style="font-size: 25px; top: 0%;" >Soft skills</h3>
-                        <br>
-                        <ul style="text-align: left;">
-                            <li>Resolução de Problemas</li>
-                            <li>Gestão de projetos</li>
-                            <li>Pensamento analítico</li>
-
-                        </ul>
-                    </div>
-                    <div class="tecno">
-                        <h3>Tecnologias</h3>
-                        <br>
-                        <ul style="text-align: left;">
-                            <li><i class="devicon-git-plain">Git</i></li>
-                            <li><i class="devicon-bash-plain"> Bash</i></li>
-                            <li><i class="devicon-mysql-original"> SQL</i></li>
-
+                    <div class="soft item-Car">
+                        <h3 >Soft skills</h3>
+                    <br>
+                    <ul style="text-align: left;">
+                        <li>Resolução de Problemas</li>
+                        <li>Gestão de projetos</li>
+                        <li>Pensamento analítico</li>
+                    </ul>
+                </div>
+                <div class="tecno item-Car">
+                    <h3>Tecnologias</h3>
+                    <br>
+                    <ul style="text-align: left;">
+                        <li><i class="devicon-git-plain">Git</i></li>
+                        <li><i class="devicon-bash-plain"> Bash</i></li>
+                        <li><i class="devicon-mysql-original"> SQL</i></li>
+                        
                     </ul>
                 </div>
             </div>
-        </section>
+                <button id="next" class="next">
+                    <img style="height: 15px; width: 15px;" src="imgs/jogue-o-botao-do-triangulo-cheio-da-seta-para-a-direita.png" alt="">
+                </button>
+            </div>
 
+        </section>
+        
         <h1 >Projetos</h1>
         <section id="projetos">
             <div class="containerbrabo">
@@ -86,32 +87,32 @@
                     <p>Site criado durante a aula de análise e desenvolvimento de sistemas
                         criado em html,css, js e futuramente uma implementação com um banco de dados
                         para armazenar os comentários do site.
-                </p>
-                <a href="https://viciuss.github.io/pokepedia/">Mais informações podem ser vistas aqui!</a>
+                    </p>
+                    <a href="https://viciuss.github.io/pokepedia/">Mais informações podem ser vistas aqui!</a>
+                </div>
+                <div class="projeto">
+                    <h1>Cronômetro e auto desligamento </h1>
+                    <p>O cronômetro "desligaekk" foi um projeto criado por mim para uso pessoal
+                        com o intuito de facilitar o agendamento de desligamento do meu computador.
+                        Para mais informações leia o "README.md" no meu GitHub
+                    </p>
+                    <a href="https://github.com/Viciuss/desligaekk">Acesse meu GitHub e veja!</a>
+                </div>
+                <div class="projeto">
+                    <h1>Projeto GDC</h1>
+                    <p>Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
+                        o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
+                        alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
+                        ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
+                    </p>
+                    <a href="https://github.com/Viciuss/Azatech-GDC">Acesse meu repositório!</a>
+                </div>
+                <div class="projeto">
+                    <h1>Espaço para Futuros projetos</h1>
+                    <p>Futuramente será adicionado um projeto aqui =)</p>
+                    <a href="index.html"></a>
+                </div>
             </div>
-            <div class="projeto">
-                <h1>Cronômetro e auto desligamento </h1>
-                <p>O cronômetro "desligaekk" foi um projeto criado por mim para uso pessoal
-                    com o intuito de facilitar o agendamento de desligamento do meu computador.
-                    Para mais informações leia o "README.md" no meu GitHub
-                </p>
-                <a href="https://github.com/Viciuss/desligaekk">Acesse meu GitHub e veja!</a>
-            </div>
-            <div class="projeto">
-                <h1>Projeto GDC</h1>
-                <p>Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
-                    o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
-                    alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
-                    ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
-                </p>
-                <a href="https://github.com/Viciuss/Azatech-GDC">Acesse meu repositório!</a>
-            </div>
-            <div class="projeto">
-                <h1>Espaço para Futuros projetos</h1>
-                <p>Futuramente será adicionado um projeto aqui =)</p>
-                <a href="index.html"></a>
-            </div>
-        </div>
         </section>
     </div>
 </div>
@@ -124,7 +125,8 @@
             <li class="li-link">Email: viniciuscmarciano@gmail.com </li>
         </ul>
     </footer>
-
+</div>
+    
 </body>
 <script src="script.js"></script>
 </html>
