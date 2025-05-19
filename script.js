@@ -26,7 +26,7 @@ const numStars = 50;
 
       if (index < messages.length) {
 
-        setTimeout(fadeMessage, 200);
+        setTimeout(fadeMessage, 500);
       } else {
 
         setTimeout(() => {
@@ -37,9 +37,9 @@ const numStars = 50;
             document.documentElement.style.overflowY = "auto";
             document.body.style.overflowY = "auto";
           });
-        }, 200);
+        }, 1000);
       }
-    }, 200);
+    }, 3000);
   }
 
   fadeMessage();
