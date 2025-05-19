@@ -26,7 +26,7 @@ const numStars = 50;
 
       if (index < messages.length) {
 
-        setTimeout(fadeMessage, 500);
+        setTimeout(fadeMessage, 1000);
       } else {
 
         setTimeout(() => {
