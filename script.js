@@ -5,7 +5,7 @@ const numStars = 50;
   const splash = document.getElementById("abertura");
   const splashText = splash.querySelector("h1");
   const messages = [
-    "Ola!",
+    "Olá!",
     "Eu me chamo Vinicius Costa",
     "Seja bem-vindo ao meu portfólio",
   ];
@@ -26,7 +26,7 @@ const numStars = 50;
 
       if (index < messages.length) {
 
-        setTimeout(fadeMessage, 200);
+        setTimeout(fadeMessage, 1000);
       } else {
 
         setTimeout(() => {
@@ -37,9 +37,9 @@ const numStars = 50;
             document.documentElement.style.overflowY = "auto";
             document.body.style.overflowY = "auto";
           });
-        }, 200);
+        }, 1000);
       }
-    }, 200);
+    }, 500);
   }
 
   fadeMessage();
