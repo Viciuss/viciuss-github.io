@@ -164,6 +164,8 @@ nav ul {
 }
 
 .projeto {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(245, 245, 245, 0.63);
   border-radius: 5px;
   margin: 1%;
@@ -174,7 +176,9 @@ nav ul {
 }
 
 .projeto > a {
+  margin-top: 5px;
   text-decoration: none;
+  justify-self: flex-end;
   color: purple;
 }
 
@@ -243,7 +247,7 @@ nav ul {
 /* Footer */
 .pe {
   background-color: black;
-  padding: 2vh 9.4%;
+  padding: 3vh 9.4%;
   color: rgba(245, 245, 245, 0.63);
   text-align: center;
   width: 100%;
