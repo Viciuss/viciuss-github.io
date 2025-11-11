@@ -3,132 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pag muito braba</title>
-    <link rel="shortcut icon"  href="imgs/literalmente eu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <div id="abertura" class="abertura">
-        <h1></h1>
-    </div>    
+    <header class="cabecalho">
+        <div class="image-logo round">
+            <img src="imgs/icon.png" alt="logo">
+        </div>
+        <div class="nav-bar">
+            <ul>
 
+            </ul>
+        </div>
+    </header>
 
-    <div id="main" class="main">
-        <div class="sky" id="sky"></div>
-        <div class="a">
-            
-            <div class="campo">
-                <section id="me" class="me">
-                    <div class="sobremim">
-                        <h2>Mais sobre mim</h2>
-                        <div>
-                            <p>Meu nome é Vinicius Costa, atualmente tenho 17 anos e estou cursando análise e desenvolvimento
-                                de sistemas e logística. Meu foco inicial é me tornar um dev back-end, mas futuramente pretendo evoluir
-                                para um dev fullstack. </p>
-                                
-                        </div>
-                    </div>
-                    <div class="circulo">
-                        <img src="imgs/Pombo Brabo.png" alt="" style="transform:scaleX(-1);height: 200px; width: 200px; float: left; border-radius: 50%;">
-                    </div>
-                </section>
-        <section class="qualify">            
-            <h1>Qualificações</h1>
-            <div class="carrossel">
-                <button id="prev" class="prev">
-                    <img style="height: 15px; width: 15px;transform: scaleX(-1);" src="imgs/jogue-o-botao-do-triangulo-cheio-da-seta-para-a-direita.png" alt="">
-                </button>
-                <div id="car-track" class="itemsCar">
-                    <div class="hard item-Car">
-                        <h3>Hard skills</h3>
-                        <br>
-                        <ul style="text-align: left;">
-                            <li><i class="devicon-python-plain"> Python</i></li>
-                            <li><i class="devicon-cplusplus-plain"> C++</i></li>
-                            <li><i class="devicon-html5-plain"> Html</i></li>
-                            <li><i class="devicon-css3-plain">CSS</i></li>
-                        </ul>
-                    </div>
-                    <div class="soft item-Car">
-                        <h3 >Soft skills</h3>
-                    <br>
-                    <ul style="text-align: left;">
-                        <li>Resolução de Problemas</li>
-                        <li>Gestão de projetos</li>
-                        <li>Pensamento analítico</li>
-                    </ul>
+    <main>
+
+        <section class="intro-me">
+            <div class="text">
+                <h3>Olá, meu nome é Vinicius Costa. <br> 
+                    Seja bem vindo!</h3><br>
+                <p>Meu nome é Vinicius Costa, atualmente tenho 17 anos e estou cursando análise e desenvolvimento
+                    de sistemas e logística. Meu foco inicial é me tornar um dev back-end, mas futuramente pretendo evoluir
+                    para um dev fullstack.</p>
                 </div>
-                <div class="tecno item-Car">
-                    <h3>Tecnologias</h3>
-                    <br>
-                    <ul style="text-align: left;">
-                        <li><i class="devicon-git-plain">Git</i></li>
-                        <li><i class="devicon-bash-plain"> Bash</i></li>
-                        <li><i class="devicon-mysql-original"> SQL</i></li>
-                        
-                    </ul>
-                </div>
-            </div>
-                <button id="next" class="next">
-                    <img style="height: 15px; width: 15px;" src="imgs/jogue-o-botao-do-triangulo-cheio-da-seta-para-a-direita.png" alt="">
-                </button>
-            </div>
-
+                
+            <img src="imgs/Pombo Brabo.png" class="round image-me" alt="">
         </section>
-        
-        <h1 >Projetos</h1>
-        <section id="projetos">
-            <div class="containerbrabo">
-                <div class="projeto">
-                    <h1>Poképedia</h1>
-                    <p>Site criado durante a aula de análise e desenvolvimento de sistemas
-                        criado em html,css, js e futuramente uma implementação com um banco de dados
-                        para armazenar os comentários do site.
-                    </p>
-                    <a href="https://viciuss.github.io/pokepedia/">Mais informações podem ser vistas aqui!</a>
+
+
+        <!--
+            <section class="qualify">
+                <article class="hard-skill skill">
+                    <h3>Hard Skills</h3>
+                    <br>
+                    <div class="items-container">
+                        <p class="skill-item">Html</p>
+                        <p class="skill-item">CSS</p>
+                        <p class="skill-item">Bash</p>
+                        <p class="skill-item">Python</p>
+                        <p class="skill-item">Golang</p>
+                        <p class="skill-item">JavaScript</p>
+                    </div>
+                </article>
+                
+                <div class="soft-skills skill">
+                    <h3>Soft Skills</h3>
+                    <br>
+                    <div class="items-container">
+                        <p class="skill-item">Resolução de Problemas</p>
+                        <p class="skill-item">Gestão de projetos</p>
+                        <p class="skill-item">Pensamento analítico</p>
+                    </div>
+            </div>
+            
+            <div class="tec-skills skill">
+                <h3>Tecnologias</h3>
+                <br>
+                <div class="items-container">
+                    <p class="skill-item">Html</p>
+                    <p class="skill-item">CSS</p>
+                    <p class="skill-item">Bash</p>
+                    <p class="skill-item">Python</p>
+                    <p class="skill-item">Golang</p>
+                    <p class="skill-item">JavaScript</p>
                 </div>
-                <div class="projeto">
-                    <h1>Cronômetro e auto desligamento </h1>
-                    <p>O cronômetro "desligaekk" foi um projeto criado por mim para uso pessoal
-                        com o intuito de facilitar o agendamento de desligamento do meu computador.
-                        Para mais informações leia o "README.md" no meu GitHub
-                    </p>
-                    <a href="https://github.com/Viciuss/desligaekk">Acesse meu GitHub e veja!</a>
-                </div>
-                <div class="projeto">
-                    <h1>Projeto GDC</h1>
-                    <p>Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
+            </div>
+            
+        </section>
+        -->
+
+        <section class="projetos">
+
+            <article class="projeto">
+                <img src="imgs/shinji.png" style="width: 100%;" alt="">
+                <h3>Azatech-GDC</h3>
+                <p class="descricao-projeto">Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
                         o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
                         alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
                         ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
+                        <span class="overflow" data-state="visible" aria-hidden="true"></span>
                     </p>
-                    <a href="https://github.com/Viciuss/Azatech-GDC">Acesse meu repositório!</a>
+                <p class="ReadMore" data-state="more">Ver mais</p>
+                <div class="linguagens">
+                    <p class="skill-item">PHP</p>
                 </div>
-                <div class="projeto">
-                    <h1>Projeto Campanario</h1>
-                    <p>Projeto criado com o intuito de simular uma sala de confissões completamente anônima, onde os
-                        usuários podem escolher entre enviar confissões, ler as confissões de outros usuários e apaga-las
-                        se assim desejar.
-                    </p>
-                    <a href="https://github.com/Viciuss/Campanario">Para mais informações acesse o link!</a>
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
+            </article>
 
-    <footer class="pe">
-        <h3>Contato</h3>
-        <ul>
-            <li class="li-link" ><a style="text-decoration: none; color: purple;" href="https://github.com/Viciuss"><i style="font-size: 30px;" class="devicon-github-original"></i></a></li>
-            <li class="li-link"><a style="text-decoration: none; color: purple;" href="https://www.linkedin.com/in/vinicius-costa-a58a922b1/"><i style="font-size: 30px;"class="devicon-linkedin-plain"></i></a></li>
-            <li class="li-link">Email: viniciuscmarciano@gmail.com </li>
-        </ul>
-    </footer>
-</div>
+
+            <article class="projeto">
+                <img src="imgs/shinji.png" style="width: 100%;" alt="">
+                <h3>Azatech-GDC</h3>
+                <p class="descricao-projeto">Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
+                        o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
+                        alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
+                        ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
+                        <span class="overflow" data-state="visible" aria-hidden="true"></span>
+                    </p>
+                <p class="ReadMore" data-state="more">Ver mais</p>
+                <div class="linguagens">
+                    <p class="skill-item">PHP</p>
+                </div>
+            </article>
+
+            <article class="projeto">
+                <img src="imgs/shinji.png" style="width: 100%;" alt="">
+                <h3>Azatech-GDC</h3>
+                <p class="descricao-projeto">Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
+                        o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
+                        alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
+                        ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
+                        <span class="overflow" data-state="visible" aria-hidden="true"></span>
+                    </p>
+                <p class="ReadMore" data-state="more">Ver mais</p>
+                <div class="linguagens">
+                    <p class="skill-item">PHP</p>
+                </div>
+            </article>
+            
+            <article class="projeto">
+                <img src="imgs/shinji.png" style="width: 100%;" alt="">
+                <h3>Azatech-GDC</h3>
+                <p class="descricao-projeto">Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
+                        o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
+                        alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
+                        ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
+                        <span class="overflow" data-state="visible" aria-hidden="true"></span>
+                    </p>
+                <p class="ReadMore" data-state="more">Ver mais</p>
+                <div class="linguagens">
+                    <p class="skill-item">PHP</p>
+                </div>
+            </article>
+
+            <article class="projeto">
+                <img src="imgs/shinji.png" style="width: 100%;" alt="">
+                <h3>Azatech-GDC</h3>
+                <p class="descricao-projeto">Projeto criado com o intuito de ser utilizado no meu TCC do curso de logística;
+                        o projeto consiste em um sistema de controle de computadores da escola, onde o usuário pode
+                        alugar, relatar problemas e registrar computadores, além de visualizar os dados de cada um deles, como status de funcionamento
+                        ou porcentagem de bateria. Mais informações podem ser vistas no meu README do repositório.
+                        <span class="overflow" data-state="visible" aria-hidden="true"></span>
+                    </p>
+                <p class="ReadMore" data-state="more">Ver mais</p>
+                <div class="linguagens">
+                    <p class="skill-item">PHP</p>
+                </div>
+            </article>
+
+
+
+        </section>
+        
+        
+    </main>
+    
+    
     
 </body>
-<script src="script.js"></script>
+
 </html>
