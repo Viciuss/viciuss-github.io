@@ -14,12 +14,21 @@
 </head>
 <body>
     <section class="menu">
-        <img class="img-logo menu-button" src="imgs/icon.png" alt="">
+        <div id="nav-menu" class="navbar closed">
+            <div class="links-container" id="links-container">
+                <ul class="lista-links">
+                    <li class="link"><a href="#intro-me"> Inicio </a></li>
+                    <li class="link"><a href="#xp"> Experiências </a></li>
+                    <li class="link"><a href="#projetos"> Projetos </a></li>
+                </ul>
+            </div>
+        </div>
+        <img id="menu-button" class="round img-logo menu-button" src="imgs/icon.png" alt="">
     </section>
 
     <main>
     
-    <section class="intro-me">
+    <section class="intro-me" id="intro-me">
             <div class="text">
                 <h3>Olá! Meu nome é Vinicius Costa.</h3><br>
                     <p>Sou um desenvolvedor back-end junior em busca de novas experiências </p>
@@ -70,7 +79,7 @@
         </section>
         -->
         <h1>Experiências</h1>
-        <section class="xp">
+        <section class="xp" id="xp">
             <article class="exp-profissional">
                 <h3 class="title">Desenvolvedor Full Stack Júnior — Projeto Acadêmico (E. E. Professora Hadla Feres)</h3>
                 <p class="descricao-profissional">
@@ -121,7 +130,7 @@
 
 
         <h1>Projetos</h1>
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <article class="projeto">
                 <img src="imgs/shinji.png" class="img-projeto" alt="">
                 <h3>Azatech-GDC</h3>
@@ -182,5 +191,5 @@
     
     
 </body>
-
+<script src="sScript.js"></script>
 </html>
