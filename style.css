@@ -6,23 +6,33 @@
 
 /* Body & header */
 body{
-    margin: 0 10%;
-    background-image:linear-gradient(to right, green, purple) ;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c0c0c;
     background-repeat:no-repeat ;
     background-size: cover;
     font-size: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+/* Menu */
+.img-logo{
+    height: 8vh;
 }
 
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgba(245, 245, 245, 0.63);
-    box-shadow: 4px 4px 11px black;
-    width: 80vw;
-    height: 8vh;
-    margin: 2.5% 0;
-    border-radius: 50px;
+.menu-button{
+    left: 2.5%;
+    top: 2.5%;
+    position: fixed;
+
+
+}
+
+
+.menu-button:hover{
+    cursor: pointer;
 }
 
 /* "Arredondador" de imagem e logo */
@@ -32,14 +42,8 @@ body{
     margin: 1%;
 }
 
-
-.image-logo{
-    background-color: black;
-    height: 6vh;
-}
-
-.image-logo > img{
-    height: inherit;
+.link{
+    color: var(--cor-primaria-geral);
 }
 
 /* Área principal e Introdução */
@@ -48,19 +52,26 @@ main{
     display: flex;
     flex-direction: column;
     color: whitesmoke;
-    margin: 5% 0;
 }
 .intro-me{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: left;
+    gap: 20%;
+    height: 100vh;
+    margin: 0 5%;
+}
+.text{
+    text-align: center;
 }
 
 .image-me{
-    background-color: black;
+    background-color: white;
     height: 300px;
     transform: scaleX(-1);
+    margin-right: 10%;
 }
 
 
@@ -89,42 +100,72 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+/* Experiências Profissionais */
+
+.xp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+.exp-profissional{
+    font-size: x-large;
+    color: whitesmoke;
+    border: 2px solid var(--cor-primaria-geral);
+    padding: 50px;
+    width: 90vw;
+}
+
+
+
+
 
 /* Animação de Linguagens & Tenologias */
 
 .skill-item{
+    width: fit-content;
+    padding: 1%;
     background-color: whitesmoke;
-    border: 4px solid var(--cor-primaria-geral);
+    border: 3px solid var(--cor-primaria-geral);
     color: var(--cor-primaria-geral);
-    border-radius: 10px;
-    margin:2px 5px;
+    border-radius: 5px;
+    margin:8px 5px;
     transition-duration:200ms ;
 }
 
 .skill-item:hover{
-    background-color: var(--cor-primaria-geral);
+
     color: black;
     border-color: none;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 0 0 45px 5px var(--cor-primaria-geral);
+    cursor: default;
 }
 
 /* Área de Projetos */
 .projetos{
-    display: grid; /* ativa o grid */
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-    gap: 1rem; /* espaço entre os cards */
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 5vw;
+    justify-content:space-around ;
 }
 
 .projeto{
-    font-size: 30px;
-    background-color: whitesmoke;
-    color: black;
-    width: 75%;
-    border-radius: 20px;
+    height: fit-content;
+    font-size: 30px;;
+    color: whitesmoke;
+    width: 25%;
+    border: 3px solid var(--cor-primaria-geral);
     padding: 2%;
     text-align: center;
     margin: 10% 0;
-    position: relative;
+    position: static;
+}
+
+.img-projeto{
+    border-radius: 20px;
+    width: 100%;
 }
 
 
