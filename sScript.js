@@ -7,6 +7,9 @@ btnMenu.addEventListener("click", ()=>{
     atualizaNavbar()
 })
 
+console.log("teste")
+
+
 function atualizaNavbar() { 
     if(!(navMenu.classList.contains("closed"))){
         links.style.display = "block"
