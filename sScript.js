@@ -15,3 +15,11 @@ function atualizaNavbar() {
     }
 
 }
+
+
+const meuEmail = document.getElementById("email")
+
+meuEmail.addEventListener("click", ()=>{
+    navigator.clipboard.writeText(meuEmail.innerHTML)
+    alert("Email copiado com sucesso!")
+})
