@@ -23,7 +23,6 @@ body{
 /* Menu */
 .img-logo{
     height: 8vh;
-    filter: invert(1);  
 }
 
 .menu-button{
@@ -40,7 +39,7 @@ body{
     width:95vw;
     border-radius: 50px;
     background-color: whitesmoke;
-    transition: width 0.5s ease;
+    transition: width 1s ease-out;
 
 }
 
@@ -98,6 +97,8 @@ main{
     display: flex;
     flex-direction: column;
     color: whitesmoke;
+    column-gap: 500px;
+    row-gap: 5vw;
 }
 .intro-me{
     display: flex;
@@ -115,8 +116,7 @@ main{
 
 .image-me{
     background-color: white;
-    height: 300px;
-    transform: scaleX(-1);
+    height: 400px;
     margin-right: 10%;
     z-index: -1;
 }
@@ -145,7 +145,8 @@ main{
 .items-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 5%;
+    justify-content: center;
 }
 /* Experiências Profissionais */
 
@@ -154,6 +155,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    row-gap: 5vh;
     height: 90vh;
 }
 .exp-profissional{
@@ -193,35 +195,45 @@ main{
 /* Área de Projetos */
 .projetos{
     display: flex;
-    flex-wrap:wrap ;
-    gap: 5vw;
-    justify-content:space-around ;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin: 0 5%;
 }
+.projetos h1{
+    position: absolute;
+}
+.projeto img{
+    height: 350px;
+}
+
 
 .projeto{
     height: fit-content;
-    font-size: 30px;;
+    font-size: 30px;
     color: whitesmoke;
     width: 25%;
     border: 3px solid var(--cor-primaria-geral);
     padding: 2%;
+    margin: 5% 0;
     text-align: center;
-    margin: 10% 0;
     position: static;
 }
 
 .img-projeto{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
 }
-
+.projeto a{
+    text-decoration: none;
+    color: var(--cor-primaria-geral);
+}
 
 
 
 .descricao-projeto{
     max-height:100px;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.5s ease;
 }
 
 
